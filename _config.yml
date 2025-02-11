@@ -1,33 +1,17 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Heily's Blog
 email: edelbteen@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://heily-tech.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-github_username:  heily-tech
+  line in _config.yml. It will appear in your document head meta 
+  (for Google search results) and in your feed.xml site description.
+
+baseurl: "" # e.g., /blog (leave empty if using root)
+url: "https://heily-tech.github.io"
+
+# Social media
+github_username: heily-tech
+# twitter_username: jekyllrb
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -39,14 +23,21 @@ plugins:
   - jekyll-archives
   - jekyll-seo-tag
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+# Collections
+collections:
+  categories:
+    output: true
+    permalink: /:collection/:path/
+
+# Default settings for collections
+defaults:
+  - scope:
+      path: ""
+      type: categories
+    values:
+      layout: category
+
+# Excluded files and directories (uncomment if needed)
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
@@ -58,20 +49,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-# Navigation Menu
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Projects"
-    url: "/projects/"
-  - title: "Algorithm"
-    url: "/algorithm/"
-  - title: "Dev Notes"
-    url: "/dev-notes/"
-  - title: "Thoughts"
-    url: "/thoughts/"
-  - title: "About"
-    url: "/about/"
-  - title: "테스트"
-    url: "/about-test/"

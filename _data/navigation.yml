@@ -1,0 +1,13 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Algorithm"
+    url: "/algorithm/"
+  - title: "Dev Notes"
+    url: "/dev-notes/"
+  - title: "Insights"
+    url: "/insights/"
+  - title: "About"
+    url: "/about/"
