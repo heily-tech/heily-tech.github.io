@@ -36,6 +36,19 @@ defaults:
       type: categories
     values:
       layout: category
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
 
 # Excluded files and directories (uncomment if needed)
 exclude:
