@@ -14,13 +14,12 @@ github_username: heily-tech
 # twitter_username: jekyllrb
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"  # ✅ 원격 테마 방식 권장
+
 plugins:
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-remote-theme
   - jekyll-feed
-  - jekyll-archives
+  - jekyll-sitemap
   - jekyll-seo-tag
 
 # Collections
@@ -38,14 +37,14 @@ defaults:
       layout: category
 
 # Excluded files and directories (uncomment if needed)
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
