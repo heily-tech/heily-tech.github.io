@@ -18,6 +18,7 @@ remote_theme: "mmistakes/minimal-mistakes"  # ✅ 원격 테마 방식 권장
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
