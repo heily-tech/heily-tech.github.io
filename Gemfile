@@ -1,4 +1,4 @@
-# Gemfile (맥/윈도우 혼용용 최적화)
+# Gemfile
 
 source "https://rubygems.org"
 
