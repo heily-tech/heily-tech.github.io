@@ -24,10 +24,10 @@ plugins:
   - jekyll-seo-tag
 
 # Collections
-collections:
-  categories:
-    output: true
-    permalink: /:collection/:path/
+#collections:
+#  categories:
+#    output: true
+#    permalink: /:collection/:path/
 
 # Default settings for collections
 defaults:
@@ -42,6 +42,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+     #show_date: true
   - scope:
       path: ""
       type: pages
@@ -49,6 +50,14 @@ defaults:
       layout: single
       author_profile: true
 
+# Custum Style
+sass:
+  style: compressed
+
+# CSS Override
+assets:
+  css:
+    - "assets/css/custom.css"
 
 # Excluded files and directories (uncomment if needed)
 exclude:
@@ -60,5 +69,6 @@ exclude:
   - node_modules/
   - vendor/bundle/
   - vendor/cache/
+  - README.md
 #   - vendor/gems/
 #   - vendor/ruby/
