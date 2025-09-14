@@ -128,6 +128,9 @@ author_profile: true
     ::first-line {}
     ```
 
+> 🔗 [Button.html 예제 보기](https://github.com/heily-tech/deepdive-fs-labs/blob/main/html%3Acss/03_button.html)
+{: notice.warning}
+
 ##### ▫️ FlexBox
   - 1차원 배치
   - Main Axis / Cross Axis 기준 정렬
@@ -159,6 +162,9 @@ author_profile: true
         align-self: auto;   /* 개별 아이템 교차축 정렬 */
       }
       ```
+
+> 🔗 [flexbox.html 예제 보기](https://github.com/heily-tech/deepdive-fs-labs/blob/main/html%3Acss/03_flexbox.html)
+{: notice.warning}
 
 ##### ▫️ CSS Grid
   - 2차원 배치
@@ -204,7 +210,7 @@ author_profile: true
       ```
 
 
-> ** 📘 Today I Learned :**
+> 📘 **Today I Learned :**
 > - HTML, CSS 기본 구조 복습
 >   - `margin`, `padding` 상하좌우 한번에 지정하는 방식 리마인드 ✔️
 > - FleeBox 1차원 레이아웃 학습 및 실습
